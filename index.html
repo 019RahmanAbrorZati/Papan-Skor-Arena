@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#10140f">
+  <meta name="description" content="Arena — papan skor futsal, sepak bola, basket, dan bulu tangkis.">
+  <title>Arena — Papan Skor</title>
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;600&family=Outfit:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <script src="app.js" defer></script>
+</head>
+<body data-sport="futsal">
+  <div class="grounds" aria-hidden="true">
+    <svg class="ground ground-futsal" viewBox="0 0 900 520">
+      <rect width="900" height="520" rx="26" fill="#14652e"/>
+      <g opacity="0.35" fill="#1c7d3a">
+        <rect x="0" y="0" width="900" height="74"/>
+        <rect x="0" y="148" width="900" height="74"/>
+        <rect x="0" y="296" width="900" height="74"/>
+        <rect x="0" y="444" width="900" height="76"/>
+      </g>
+      <g fill="none" stroke="#f4f7f2" stroke-width="5">
+        <rect x="36" y="28" width="828" height="464" rx="4"/>
+        <line x1="450" y1="28" x2="450" y2="492"/>
+        <circle cx="450" cy="260" r="74"/>
+        <rect x="36" y="118" width="148" height="284"/>
+        <rect x="716" y="118" width="148" height="284"/>
+        <rect x="36" y="176" width="62" height="168"/>
+        <rect x="802" y="176" width="62" height="168"/>
+        <path d="M184 196a46 46 0 0 1 0 128"/>
+        <path d="M716 196a46 46 0 0 0 0 128"/>
+      </g>
+      <circle cx="450" cy="260" r="6" fill="#f4f7f2"/>
+      <circle cx="148" cy="260" r="4" fill="#f4f7f2"/>
+      <circle cx="752" cy="260" r="4" fill="#f4f7f2"/>
+      <path d="M36 48a20 20 0 0 0-20 20M864 48a20 20 0 0 1 20 20M36 472a20 20 0 0 1-20-20M864 472a20 20 0 0 0 20-20" fill="none" stroke="#f4f7f2" stroke-width="5"/>
+      <rect x="8" y="214" width="28" height="92" fill="#0e3d1c" stroke="#f4f7f2" stroke-width="4"/>
+      <rect x="864" y="214" width="28" height="92" fill="#0e3d1c" stroke="#f4f7f2" stroke-width="4"/>
+    </svg>
+
+    <svg class="ground ground-soccer" viewBox="0 0 980 560">
+      <rect width="980" height="560" rx="22" fill="#0e6b2e"/>
+      <g opacity="0.28" fill="#168a3c">
+        <rect x="0" y="0" width="980" height="80"/>
+        <rect x="0" y="160" width="980" height="80"/>
+        <rect x="0" y="320" width="980" height="80"/>
+        <rect x="0" y="480" width="980" height="80"/>
+      </g>
+      <g fill="none" stroke="#f4f7f2" stroke-width="5">
+        <rect x="36" y="24" width="908" height="512"/>
+        <line x1="490" y1="24" x2="490" y2="536"/>
+        <circle cx="490" cy="280" r="86"/>
+        <rect x="36" y="104" width="162" height="352"/>
+        <rect x="782" y="104" width="162" height="352"/>
+        <rect x="36" y="188" width="58" height="184"/>
+        <rect x="886" y="188" width="58" height="184"/>
+        <path d="M198 228a74 74 0 0 1 0 104"/>
+        <path d="M782 228a74 74 0 0 0 0 104"/>
+        <path d="M56 24a20 20 0 0 0-20 20M924 24a20 20 0 0 1 20 20M56 536a20 20 0 0 1-20-20M924 536a20 20 0 0 0 20-20"/>
+      </g>
+      <circle cx="490" cy="280" r="6" fill="#f4f7f2"/>
+      <circle cx="144" cy="280" r="5" fill="#f4f7f2"/>
+      <circle cx="836" cy="280" r="5" fill="#f4f7f2"/>
+      <rect x="6" y="230" width="30" height="100" fill="#0a3d1c" stroke="#f4f7f2" stroke-width="4"/>
+      <rect x="944" y="230" width="30" height="100" fill="#0a3d1c" stroke="#f4f7f2" stroke-width="4"/>
+    </svg>
+
+    <svg class="ground ground-basket" viewBox="0 0 940 500">
+      <rect width="940" height="500" rx="18" fill="#c6864a"/>
+      <g stroke="#a86a34" stroke-width="3" opacity="0.45">
+        <line x1="40" y1="0" x2="40" y2="500"/>
+        <line x1="90" y1="0" x2="90" y2="500"/>
+        <line x1="140" y1="0" x2="140" y2="500"/>
+        <line x1="190" y1="0" x2="190" y2="500"/>
+        <line x1="240" y1="0" x2="240" y2="500"/>
+        <line x1="290" y1="0" x2="290" y2="500"/>
+        <line x1="340" y1="0" x2="340" y2="500"/>
+        <line x1="390" y1="0" x2="390" y2="500"/>
+        <line x1="440" y1="0" x2="440" y2="500"/>
+        <line x1="490" y1="0" x2="490" y2="500"/>
+        <line x1="540" y1="0" x2="540" y2="500"/>
+        <line x1="590" y1="0" x2="590" y2="500"/>
+        <line x1="640" y1="0" x2="640" y2="500"/>
+        <line x1="690" y1="0" x2="690" y2="500"/>
+        <line x1="740" y1="0" x2="740" y2="500"/>
+        <line x1="790" y1="0" x2="790" y2="500"/>
+        <line x1="840" y1="0" x2="840" y2="500"/>
+        <line x1="890" y1="0" x2="890" y2="500"/>
+      </g>
+      <g fill="none" stroke="#f7f1e8" stroke-width="5">
+        <rect x="28" y="24" width="884" height="452"/>
+        <line x1="470" y1="24" x2="470" y2="476"/>
+        <circle cx="470" cy="250" r="62"/>
+        <rect x="28" y="145" width="168" height="210"/>
+        <rect x="744" y="145" width="168" height="210"/>
+        <path d="M196 145a105 105 0 0 1 0 210"/>
+        <path d="M744 145a105 105 0 0 0 0 210"/>
+        <path d="M28 78c150 0 248 78 248 172s-98 172-248 172"/>
+        <path d="M912 78c-150 0-248 78-248 172s98 172 248 172"/>
+        <line x1="148" y1="145" x2="148" y2="355"/>
+        <line x1="792" y1="145" x2="792" y2="355"/>
+      </g>
+      <circle cx="470" cy="250" r="7" fill="#f7f1e8"/>
+      <circle cx="78" cy="250" r="16" fill="none" stroke="#f26b3a" stroke-width="6"/>
+      <circle cx="862" cy="250" r="16" fill="none" stroke="#f26b3a" stroke-width="6"/>
+      <rect x="28" y="214" width="18" height="72" fill="#f4efe6" stroke="#d7d0c4"/>
+      <rect x="894" y="214" width="18" height="72" fill="#f4efe6" stroke="#d7d0c4"/>
+    </svg>
+
+    <svg class="ground ground-badminton" viewBox="0 0 1000 460">
+      <rect width="1000" height="460" rx="18" fill="#0f6a4a"/>
+      <rect x="18" y="18" width="964" height="424" fill="#17845c"/>
+      <g fill="none" stroke="#f4f7f2" stroke-width="5">
+        <rect x="70" y="36" width="860" height="388"/>
+        <line x1="70" y1="78" x2="930" y2="78"/>
+        <line x1="70" y1="382" x2="930" y2="382"/>
+        <line x1="250" y1="78" x2="250" y2="382"/>
+        <line x1="750" y1="78" x2="750" y2="382"/>
+        <line x1="250" y1="230" x2="750" y2="230"/>
+        <line x1="70" y1="36" x2="70" y2="424"/>
+      </g>
+      <line x1="500" y1="36" x2="500" y2="424" stroke="#f4f7f2" stroke-width="8"/>
+      <line x1="500" y1="48" x2="500" y2="412" stroke="#12382c" stroke-width="2" stroke-dasharray="8 7"/>
+      <circle cx="500" cy="36" r="7" fill="#e7efe9"/>
+      <circle cx="500" cy="424" r="7" fill="#e7efe9"/>
+    </svg>
+  </div>
+  <div class="app">
+    <header class="top">
+      <div class="brand">
+        <p class="brand-name">Arena</p>
+        <p class="brand-sub">Papan skor</p>
+      </div>
+      <div class="sports" role="tablist" aria-label="Jenis olahraga">
+        <button type="button" class="sport" data-sport="futsal" role="tab" aria-selected="true">Futsal</button>
+        <button type="button" class="sport" data-sport="soccer" role="tab" aria-selected="false">Sepak bola</button>
+        <button type="button" class="sport" data-sport="basket" role="tab" aria-selected="false">Basket</button>
+        <button type="button" class="sport" data-sport="badminton" role="tab" aria-selected="false">Bulu tangkis</button>
+      </div>
+    </header>
+
+    <p id="banner" class="banner" role="status" hidden></p>
+
+    <section class="board" aria-label="Skor pertandingan">
+      <div id="teams" class="teams"></div>
+    </section>
+
+    <section class="dock" aria-label="Kendali pertandingan">
+      <ol id="log" class="log"></ol>
+      <div class="dock-actions">
+        <button type="button" id="undo">Urungkan</button>
+        <button type="button" id="swap">Tukar sisi</button>
+        <button type="button" id="reset" class="danger">Reset</button>
+      </div>
+    </section>
+  </div>
+
+  <dialog id="confirm">
+    <form method="dialog">
+      <p>Hapus skor pertandingan ini dan mulai dari nol?</p>
+      <div class="dialog-actions">
+        <button value="cancel" class="ghost">Batal</button>
+        <button value="ok" class="danger">Ya, reset</button>
+      </div>
+    </form>
+  </dialog>
+</body>
+</html>
